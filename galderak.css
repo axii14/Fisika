@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
+
+body {
+    background: white;
+}
+.product_wrap {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+    transform: translateY(0) translateX(0);
+    transition: all 300ms ease-in-out 200ms;
+    z-index: 1;
+}
+.product-dropshadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-image: url('https://tatimblin.github.io/morris-jekyll/img/assets/diagonals.png');
+    background-repeat: repeat-x repeat-y;
+    background-size: 100px 100px;
+    border-radius: 5px;
+    transform: translateY(0px) translateX(0px);
+    transition: all 500ms ease-in-out 280ms;
+    z-index: -1;
+}
+.product:hover .product-dropshadow {
+    opacity: 0.3;
+    transform: translateY(10px) translateX(5px);
+}
+.product:hover {
+    transform: translateY(-10px) translateX(-5px);
+}
+.product-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    border-radius: 250%;
+    transform: scale(0.5) translateY(100px);
+    transition: all 600ms ease-in-out 50ms;
+    z-index: -1;
+}
+.product:hover .product-backdrop {
+    background: #7986cb;
+    height: 100%;
+    opacity: 1;
+    border-radius: 5px;
+    transform: scale(1) translateY(0px);
+}
+.product:hover .product-backdrop_purple {
+    background: #7986cb;
+}
+.product:hover .product-backdrop_green {
+    background: #7986cb;
+}
+.product:hover .product-backdrop_red {
+    background: #7986cb;
+}
+.product-img {
+    width: 90%;
+    height: 15vw;
+    margin: 15px auto;
+    border-radius: 5px;
+    background: #ccc;
+    background-size: cover;
+    z-index: 10;
+}
+.product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    z-index: 10;
+}
+.product-content-title h4 {
+    font-size: 1.5em;
+    color: #000;
+    transition: all 300ms ease-in-out 150ms;
+    font-family: 'Lato', sans-serif;
+}
+.product-content-cost h5 {
+    line-height: 2em;
+    font-size: 1em;
+    color: #000;
+    transition: all 300ms ease-in-out 150ms;
+}
+.product .product-buy {
+    position: absolute;
+    width: 40%;
+    right: 5%;
+    padding: 10px 6px;
+    border: 1px solid #7986cb;
+    border-radius: 30px;
+    font-size: 0.8em;
+    line-height: 0.8em;
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 300ms ease-in-out 150ms;
+}
+.product .product-buy:hover {
+    box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.16), 0 3px 2px rgba(0, 0, 0, 0.23);
+}
+.product .product-buy h5 {
+    text-align: center;
+    font-size: 1em;
+    color: #7986cb;
+}
+.product:hover .product-buy {
+    opacity: 1;
+    transform: translateY(-30px);
+}
+#bowl {
+    background-image: url('FOTUA1.jpg');
+}
+#tshirt {
+    background-image: url('FOTUA2.jpg');
+}
+#mug {
+    background-image: url('FOTUA3.jpg');
+}
+#purple {
+    border: 2px solid #7986cb;
+}
+#purple h5 {
+    color: #7986cb;
+}
+#green {
+    border: 2px solid #7986cb;
+}
+#green h5 {
+    color: #7986cb;
+}
+#red {
+    border: 2px solid #7986cb;
+}
+#red h5 {
+    color: #7986cb;
+}
+a{
+    text-decoration: none;
+}
+
+
+.chrome {
+    position: relative;
+    left:25%;
+    right:auto;
+    background-image: -webkit-linear-gradient(#374bbc 0%, #b6e5f1 46%, #ffffff 50%, #43ebe3 54%, #88cfff 58%, #1c1158 90%, #704eec 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #f5f5f5;
+    font-size: 200px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .chrome:before {
+    content: 'Galdera';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+    background-position:-680px 0;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0;
+    padding-right: 300px;
+    -webkit-animation-name: chrome_effect;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  .dreams {
+    position: absolute;
+    left:25%;
+    margin: 0px;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 160px;
+    color: #75aaf9 ;
+    transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg); /* IE 9 */
+    -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+    margin-left: 400px;
+    margin-top: -120px;
+    -webkit-text-stroke: 1px #0851f0;
+    -webkit-filter: drop-shadow(2px 2px 20px #0865f0);
+    z-index: 20;
+  }
+  
+  
+  
+  @-webkit-keyframes chrome_effect {
+    0% {background-position:-680px 0;}
+    10% {background-position:420px 0;}
+    100% {background-position:420px 0;}
+  }
+  
