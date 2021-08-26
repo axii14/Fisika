@@ -155,6 +155,7 @@ a{
 
 .chrome {
     position: relative;
+    display: inline;
     left:10%;
     right:auto;
     background-image: -webkit-linear-gradient(#374bbc 0%, #b6e5f1 46%, #ffffff 50%, #43ebe3 54%, #88cfff 58%, #1c1158 90%, #704eec 100%);
@@ -171,6 +172,7 @@ a{
   .chrome:before {
     content: 'Galdera';
     position: absolute;
+    display: inline;
     left: 0;
     top: 0;
     z-index: 10;
@@ -188,6 +190,7 @@ a{
   
   .dreams {
     position: absolute;
+    display: inline;
     left:5%;
     margin: 0px;
     font-family: 'Mr Dafoe', cursive;
