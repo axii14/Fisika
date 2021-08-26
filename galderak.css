@@ -155,7 +155,7 @@ a{
 
 .chrome {
     position: relative;
-    left:25%;
+    left:15%;
     right:auto;
     background-image: -webkit-linear-gradient(#374bbc 0%, #b6e5f1 46%, #ffffff 50%, #43ebe3 54%, #88cfff 58%, #1c1158 90%, #704eec 100%);
     -webkit-background-clip: text;
@@ -188,7 +188,7 @@ a{
   
   .dreams {
     position: absolute;
-    left:25%;
+    left:10%;
     margin: 0px;
     font-family: 'Mr Dafoe', cursive;
     font-size: 160px;
