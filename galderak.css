@@ -172,7 +172,6 @@ a{
   .chrome:before {
     content: 'Galdera';
     position: absolute;
-    display: inline;
     left: 0;
     top: 0;
     z-index: 10;
