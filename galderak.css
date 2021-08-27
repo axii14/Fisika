@@ -153,10 +153,11 @@ a{
 }
 
 
+
 .chrome {
     position: relative;
     display: inline;
-    left:20%;
+    left:23%;
     right:auto;
     background-image: -webkit-linear-gradient(#374bbc 0%, #b6e5f1 46%, #ffffff 50%, #43ebe3 54%, #88cfff 58%, #1c1158 90%, #704eec 100%);
     -webkit-background-clip: text;
@@ -172,8 +173,10 @@ a{
   .chrome:before {
     content: 'Galdera';
     position: absolute;
+    display: inline;
+    font-size: 200px;
     left: 0;
-    top: 0;
+    top: 18%;
     z-index: 10;
     background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
     background-position:-680px 0;
@@ -182,7 +185,7 @@ a{
     padding-right: 300px;
     -webkit-animation-name: chrome_effect;
     -webkit-animation-duration: 6s;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 1s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
@@ -190,11 +193,11 @@ a{
   .dreams {
     position: absolute;
     display: inline;
-    left:20%;
-    top:20%;
+    left:30%;
+    top:40%;
     margin: 0px;
     font-family: 'Mr Dafoe', cursive;
-    font-size: 160px;
+    font-size: 100px;
     color: #75aaf9 ;
     transform:rotate(-15deg);
     -ms-transform:rotate(-15deg); /* IE 9 */
