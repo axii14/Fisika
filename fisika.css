@@ -1,0 +1,181 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Kanit:wght@800&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Hind+Vadodara&display=swap');
+
+
+.aukerak {
+background:#212121;
+border-right:1px solid #242424;
+position:fixed;
+top:0;
+bottom:0;
+height:8%;
+right:0;
+width:100%;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.aukerak>ul {
+margin:7px 0;
+list-style-type: none;
+}
+
+.aukerak li {
+position:relative;
+display:block;
+width: 90px;
+float: left;
+left: 10px;
+top:0;
+}
+
+.aukerak li>a {
+position:relative;
+
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 16px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+}
+
+.aukerak .titulua {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.aukerak>ul.hasiera {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+margin-top: -15px;
+}
+
+.area {
+float: left;
+background: #1d1d1d;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+.aukerak img{
+    padding-left: 8px;
+    width:40px;
+    filter: invert(93%) sepia(0%) saturate(7500%) hue-rotate(57deg) brightness(107%) contrast(110%);
+}
+span{
+    padding-left: 20px;
+}
+.opzinuak{
+    padding-top: 16px;
+}
+.hasiera{
+    padding-bottom: 30px;
+}
+body{
+    background: #27272C;
+}
+
+h1{ 
+    color: white;
+    font-family: 'Sunrise International Demo';
+    text-align: center;
+    font-size: 85px ;
+    margin-top: 90px;
+}
+
+h3{ 
+    background-color: rgba(255, 255, 255, 0.171);
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 45px;
+}
+
+p, ul li, ul li table td {
+    color: #ffffff; 
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1.8em;
+}
+table tr.c {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 1.8em;
+    color: #ffffff; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+.azpimarratu:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  height: 1em;
+  width: 46%;
+  border-bottom: 6px solid;
+  margin-top: 26px;
+  margin-left: 27%;
+  transition: opacity 0.35s, transform 0.35s; 
+  -webkit-transform: scale(0,1);
+}
+
+.azpimarratu:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+}
+
+.azpimarratu:hover{
+    color:chartreuse;
+}
+
+a{
+    text-decoration: none;
+}
+
+small{
+    font-size: 20px
+}
+
+.aukerak img:hover{
+    transform: scale(1.09);
+}
